@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+.brand img{
+    height:58px;
+    padding:0 3px;
+}
+
+body{
+    background-color:#12295f;
+    
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display:flex;
+    list-style: none;
+    height:70px;
+    background-color:black;
+    color:white;
+    align-items:center;
+
+}
+
+.brand{
+  display:flex;
+  align-items: center;
+  font-weight:bold;
+  font-size:1.3rem;
+}
+
+nav ul li{
+    padding:0 12px;
+    padding-right: 99px;
+}
+
+.bottom{
+    position:sticky;
+    height:130px;
+    background-color:black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to make sure it sticks at bottom  */
+    bottom:0;   
+
+    color:white;
+    flex-direction:column;
+   
+    /* background-image: url('musicbar.gif');
+    background-repeat: no-repeat;
+    background-size:126px 130px; */
+    
+}
+
+.container{
+    min-height: 82vh;
+    /* if i dont do this .bottom will not go to the bottom of page  */
+    background-color: black;
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display:flex;
+    width:70%;
+    margin:39px auto;
+    border-radius:12px;
+    padding:34px;
+    background-image: url('headphone.jpg');
+    background-repeat: no-repeat;
+    
+    background-position: center;
+    background-size: cover;
+
+    
+}
+
+#myprogress{
+    width:80vw;
+    text-align:center;
+    cursor:pointer;
+}
+
+.icons{
+    margin:14px;
+    cursor:pointer;
+}
+
+.songitem img{
+    height:39px;
+    width:45px;
+    margin:0 23px;
+    border-radius :34px;
+}
+
+.songitem{
+    height:50px;
+    display:flex;
+    background-color: #22c6a56b;
+    color:black;
+    margin:12px 0;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    border-radius:34px;
+    color: #fde101;
+}
+
+.timestamp{
+    margin:0 10px;
+    color:black;
+}
+.timestamp i{
+    cursor:pointer;
+}
+
+.songitemcontainer{
+    margin:45px 0;
+}
+
+
+/* suppose i was putting the gif in the bottom bar  */
+ .songinfo {
+    
+    position:absolute;
+    left:9vw;
+    display:flex;
+    align-items: center;
+}
+
+.songinfo img{
+    height:69px;
+    /* initially making my gif opacity 1 */
+    opacity:0;
+    transition:opacity 0.4s ease-in;
+    /* now when i put opacity 1 ,it will slowly start appearing */
+    margin-top: 10px;
+}
+
+#mastersongname{
+    font-size: 25px;
+    height:15px;
+}
+li{
+    font-size: 22px;
+}
